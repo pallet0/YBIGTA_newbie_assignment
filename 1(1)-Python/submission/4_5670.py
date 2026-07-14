@@ -63,7 +63,7 @@ def count(trie: Trie, query_seq: str) -> int:
 
         new_index = None # 구현하세요!
 
-        pointer = new_index
+        pointer = new_index  # type: ignore[assignment]
 
     return cnt + int(len(trie[0].children) == 1)
 
